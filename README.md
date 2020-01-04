@@ -3,6 +3,7 @@
 ## Learning Goals
 
 - Remove logic from controller actions in to a separate service class
+
 - Refactor code to eliminate repetition
 
 ## Introduction
@@ -203,8 +204,8 @@ will be stored as `@sighting`. We will need to access to this variable elsewhere
 in the `SightingSerializer`, so an instance variable is needed here.
 
 The second step is to write a method that will call `to_json` on this instance
-variable, handling the inclusion and exclusion of attributes, and return the results. 
-We will call this method `to_serialized_json`, and for now we can directly copy the 
+variable, handling the inclusion and exclusion of attributes, and return the results.
+We will call this method `to_serialized_json`, and for now we can directly copy the
 `to_json` logic that currently exists in `SightingsController`:
 
 ```ruby
