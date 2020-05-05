@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+puts "making birds"
 bird_a = Bird.create(name: "Black-Capped Chickadee", species: "Poecile Atricapillus")
 bird_b = Bird.create(name: "Grackle", species: "Quiscalus Quiscula")
 bird_c = Bird.create(name: "Common Starling", species: "Sturnus Vulgaris")
@@ -20,3 +20,4 @@ sighting_b = Sighting.create(bird: bird_b, location: location_b)
 sighting_c = Sighting.create(bird: bird_c, location: location_a)
 sighting_d = Sighting.create(bird: bird_d, location: location_c)
 sighting_e = Sighting.create(bird: bird_a, location: location_b)
+puts "all done"
