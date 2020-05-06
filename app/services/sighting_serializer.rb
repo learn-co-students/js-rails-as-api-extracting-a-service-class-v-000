@@ -1,6 +1,7 @@
 class SightingSerializer
   # Important note: When I create this file, I need to restart the Rails server.
   # That will allow the SightingSerializer class to be recognized and available in the SightingsController (and other places).
+  # However, I can alter this file without needing to restart the server.
 
   def initialize(sighting_object)
     @sighting = sighting_object
